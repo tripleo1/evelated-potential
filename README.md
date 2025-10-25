@@ -3,38 +3,36 @@ Elijah evelated-potential
 
 Elijah is:
 
-- ... a high-level language built to explore \[insert goal here\].
+- ... a high-level language built to entertain it's author's whims.
 - ... a historical curiosity.
 - ... meant to be easy to use standalone or with existing projects.
-- ... free software (LGPL) intended for use on all systems, aka Linux.
-- ... philosophically opposed to semicolons
+- ... free software (LGPL) intended for use on all systems, including Plan9, Haiku and Wasi.
+- ... philosophically opposed to semicolons: need to write a better parser, then
 
 `evelated-potential` is:
 
-- ... implemented in Java (17, for now; 8 is great and Graal is you paal)
-- ... of the impression that build systems don't matter (tldr maven for now)
-- ... mortal enemies of Scala and Kotlin
-- ... secretly excited about Clojure (and Xtend nad EMF/MBSE)
-- ... also secretly jealous of Lombok and AOP
-
-`evelated-potential` could:
-
-- ...
-- ... integrate everything under the moon 
+- ... implemented in Java 17 (We'll investigate later versions with or without Truffle later; and also Scala and or Clojure)
+- ... build with maven, with interest in leiningen
+- ... a very small, simple build
 
 Instructions
 -------------
 
-[https://github.com/elijah-team/elevated-potential](https://github.com/elijah-team/elevated-potential)
+[https://github.com/tripleo1/evelated-potential](https://github.com/tripleo1/evelated-potential)
 
 ```shell
-git clone https://github.com/elijah-team/elevated-potential -b giveup
+git clone https://github.com/tripleo1/evelated-potential -b giveup
 cd elevated-potential
-mkdir COMP
 mvnd clean test
 # or 
-nix-shell -p maven jdk17 --pure --command "maven clean test"
+nix-shell -p maven jdk17_headless --pure --command "maven clean test"
 ```
+
+Revised Goals
+--------------
+
+- Slicing and bulldozing into something presentable
+
 
 Goals
 ------
